@@ -21,6 +21,25 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/ui.js"></script> 
 </head>
+<script>
+    var filter = "win16|win32|win64|mac|macintel"; 
+    if ( navigator.platform ) { 
+        if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { 
+            //mobile 
+            var url = "mobile/index.html"
+        } else { 
+            //pc 
+            var url = "index.html"
+        } 
+    }
+    var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'Windows CE;', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Mobile', 'Symbian', 'Opera Mobi', 'Opera Mini', 'IEmobile');
+        for (var word in mobileKeyWords) {
+            if (navigator.userAgent.match(mobileKeyWords[word]) != null) {
+                window.location.href = "mobile/index.html";
+                break;
+        }
+    }
+</script>
 <body>
     <div id="wrap">
         <header id="header" class="box_width">
@@ -327,19 +346,5 @@
             <div class="rights">© 2020 <span>NAMOK</span> . All Rights Reserved</div>
         </footer> <!-- e: footer -->
     </div> <!-- e: wrap -->
-
-    <script>
-        var filter = "win16|win32|win64|mac|macintel"; 
-        if ( navigator.platform ) { 
-            if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { 
-                //mobile 
-                alert('mobile 접속'); 
-                var url = "mobile/index.html"
-            } else { 
-                //pc 
-                var url = "index.html"
-            } 
-        }
-    </script>
 </body>
 </html>
