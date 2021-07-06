@@ -329,12 +329,17 @@
     </div> <!-- e: wrap -->
 
     <script>
-        $(document).ready(function () {
-            let filter = "win16|win32|win64|mac|macintel";
-            if(0 > filter.indexOf(navigator.platform.toLowerCase())){
-                window.location.href="mobile/index.html"
-            }
-        });
+        var filter = "win16|win32|win64|mac|macintel"; 
+        if ( navigator.platform ) { 
+            if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { 
+                //mobile 
+                alert('mobile 접속'); 
+                var url = "mobile/index.html"
+            } else { 
+                //pc 
+                var url = "index.html"
+            } 
+        }
     </script>
 </body>
 </html>
