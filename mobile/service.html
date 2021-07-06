@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>모두의 행사 :: BLOOM</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no initial-scale=1.0" name="viewport" />
+        <meta name="viewport" content="viewport-fit=cover">
+        <meta name="format-detection" content="telephone=no">
+        <link href="css/common.css" rel="stylesheet" type="text/css">
+        <link href="css/bloom.css" rel="stylesheet" type="text/css">
+        <link href="../font/stylesheet.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet"> <!-- font-family: 'Nanum Brush Script', cursive; -->
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+        <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="logo"><a href="index.html"><img src="../img/logo_new.png" alt="모두의 행사 BLOOM"></a></h1>
+
+            <div class="header_menu">
+                <a href="#" class="all"><span>메뉴</span></a>
+                <div>
+                    <ul class="gnb">
+                        <li><a href="bloom.html">ABOUT BLOOM</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div> <!-- e: header_menu -->
+        </header> <!-- e: header -->
+        
+        <div id="visual" class="service">
+            <div class="randing_title">
+                <p>
+                    서비스 안내
+                </p>
+            </div>
+
+            <div class="randing_text">
+                <h2>서비스(플랫폼) 소개</h2>
+
+                <p class="content_text">
+                    <div class="service_img">
+                        <img src="../img/service-phone.png">
+                        <ul>
+                            <li>
+                                <span>국내 최초, 최대 이벤트 정보 플랫폼</span><br>
+                                생일, 결혼, 회식, 돌잔치, 피로연 등 가족 행사부터 지역 축제, 관광명소 투어 이벤트, 대규모 스포츠 행사까지 대한민국의 수십만 모든 행사를 한번에!<br>
+                            </li>
+                            <li>
+                                <span>최대 30% 할인과 다양한 혜택 제공</span><br>
+                                구매자는 최대 30% 할인된 가격으로 구매가 가능하며, 판매자는 효율적인 판매 관리 시스템을 통해 성공적인 매출 관리가 가능<br>
+                            </li>
+                            <li>
+                                <span>고객 맞춤형 상품 리스트 제공</span><br>
+                                모바일 앱 실행 시 사용자 핸드폰의 Data를 분석하여 개인화된 콘텐츠를 화면에 표시<br>
+                            </li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+            <div class="randing_text">
+                <h2>제휴사 혜택</h2>
+
+                <p class="content_text">
+                    <div class="benefit_img">
+                        <span>'부름'에 등록하면 좋은 점은?</span>
+                        <img src="../img/benefit-2.png">
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="footer_box">
+                <div class="contact">
+                    CONTACT US
+                    <img class="line_img" src="../img/line-g.png">
+                    <ul>
+                        <li><span>주소</span>&nbsp;서울특별시 강남구 테헤란로 123 여삼빌딩 11층 (주)나목</li>
+                        <li><span>TEL</span>&nbsp;02-2038-3949</li>
+                        <li><span>FAX</span>&nbsp;02-2038-3139</li>
+                        <li><span>E-MAIL</span>&nbsp;namok@namok.co.kr</li>
+                    </ul>
+                </div>
+                <div class="footer_logo">
+                    <a href="#"><img src="../img/footer_logo-1.png"></a>
+                </div>
+            </div>
+            <div class="rights">© 2020 <span>NAMOK</span> . All Rights Reserved</div>
+        </footer> <!-- e: footer -->
+
+        <script>
+            $(document).ready(function() {
+
+                $(".all").click(function() {
+                    $(this).toggleClass("on");
+                    $(".header_menu div").toggleClass("on");
+                });
+            });
+        </script>
+    </body>
+</html>
