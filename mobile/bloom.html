@@ -18,10 +18,8 @@
         <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
         <![endif]-->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-        <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-        <script src="js/prefixfree.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+        <script src="../js/ui.js"></script>
     </head>
     <body>
         <header id="header">
@@ -92,6 +90,40 @@
                     </span>
                 </p>
             </div>
+            <div class="randing_text">
+                <div class="content">
+                    <h2 class="content_title">심볼 마크</h2>
+                    <p class="content_text">
+                        부름의 심볼 마크의 다양한 원형은 꽃이 피어남과 동시에 축제의 의미를 가진 폭죽이 터져나가는 모습을<br />
+                        연상하게 해주며, 사람들이 가진 다양하고 밝은 에너지를 컬러를 통해 표현하였습니다.<br />
+                        그 속에 있는 브랜드는 그들을 조화롭게 잘 연결해주는 플랫폼으로써의 아이덴티티에 충실함을 느끼게
+                        해줍니다
+                    </p>
+                    <div class="bi_img brand_img">
+                        <img src="../img/BI-logo.jpg" alt="" />
+                    </div>
+                    <div class="bi_list brand_img">
+                        <ul>
+                            <li>
+                                <h2 class="content_title">시그니쳐 (가로형)</h2>
+                                <img src="../img/BI-1.jpg" alt="" />
+                            </li>
+                            <li>
+                                <h2 class="content_title">시그니쳐 (세로형)</h2>
+                                <img src="../img/BI-2.jpg" alt="" />
+                            </li>
+                            <li>
+                                <h2 class="content_title">로고</h2>
+                                <img src="../img/BI-3.jpg" alt="" />
+                            </li>
+                            <li>
+                                <h2 class="content_title">심볼</h2>
+                                <img src="../img/BI-4.jpg" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <footer id="footer">
@@ -112,15 +144,5 @@
             </div>
             <div class="rights">© 2020 <span>NAMOK</span> . All Rights Reserved</div>
         </footer> <!-- e: footer -->
-
-        <script>
-            $(document).ready(function() {
-
-                $(".all").click(function() {
-                    $(this).toggleClass("on");
-                    $(".header_menu div").toggleClass("on");
-                });
-            });
-        </script>
     </body>
 </html>

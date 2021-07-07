@@ -6,6 +6,10 @@
 .title_img::before {content: ""; height: 94px; width: 3px; position: absolute; right: -10px; top: -2px; background: #222;}
 .title_img {width: 22px; height: 89px;}
 
+.title_img1 {position: absolute; left: 38px; top: 50px; width: 22px; height: 70px;}
+.title_img1::before {content: ""; height: 75px; width: 3px; position: absolute; right: -10px; top: -2px; background: #222;}
+
+
 .content {width: 960px; margin: 0 auto; padding: 50px 0;}
 .content .content_title {font-size: 24px; margin-bottom: 32px;}
 .content .content_text {font-size: 16px; line-height: 26px;}
@@ -20,3 +24,8 @@
 
 .brand_img_2 span {display: block; margin-top: 48px; font-size: 28px; font-weight: bold; line-height: 42px;}
 .brand_img_2 span strong {color: #ff1a31; font-weight: bold;}
+
+.bi_img {margin-top:30px;margin-bottom:98px}
+.bi_list{overflow: hidden;}
+.bi_list li:nth-child(odd){float:left;margin-right:40px;}
+.bi_list li:nth-child(3),.bi_list li:nth-child(4){margin-top:40px;}
