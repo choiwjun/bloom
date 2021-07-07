@@ -22,15 +22,15 @@
     <script src="js/ui.js"></script> 
 </head>
 <script>
-    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-    jQuery(document).ready(function($){
-         if(!isMobile) {
-              //PC
-         } else {
-              //MOBILE
-              window.location.replace = "mobile/index.html";
-         }
-    });
+    var filter = "win16|win32|win64|macintel|mac|"; // PC일 경우 가능한 값
+    if( navigator.platform){
+        if( filter.indexOf(navigator.platform.toLowerCase())<0 ){
+            window.location.replace = "mobile/index.html";
+        }
+    else{
+            
+        }
+    }
 </script>
 <body>
     <div id="wrap">
