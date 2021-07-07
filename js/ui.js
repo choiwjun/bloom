@@ -1,11 +1,13 @@
 
-
-var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'Windows CE;', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Mobile', 'Symbian', 'Opera Mobi', 'Opera Mini', 'IEmobile');
-    for (var word in mobileKeyWords) {
-        if (navigator.userAgent.match(mobileKeyWords[word]) != null) {
-            $(location).attr('replace', './mobile/index.html')
-            break;
-    }
+var filter = "win16|win32|win64|mac|macintel"; 
+if ( navigator.platform ) { 
+    if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { 
+        //mobile 
+        var url = "mobile/index.html"
+    } else { 
+        //pc 
+        var url = "index.html"
+    } 
 }
 /* user 접속여부 확인 */
 
