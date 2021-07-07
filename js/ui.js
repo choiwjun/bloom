@@ -9,7 +9,7 @@ if ( navigator.platform ) {
         
     } 
 }
-/*
+
 var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'Windows CE;', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Mobile', 'Symbian', 'Opera Mobi', 'Opera Mini', 'IEmobile');
     for (var word in mobileKeyWords) {
         if (navigator.userAgent.match(mobileKeyWords[word]) != null) {
@@ -18,7 +18,7 @@ var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windo
     }
 }
 
- user 접속여부 확인 */
+ /*user 접속여부 확인 */
 
 $(document).ready(function(){
     $('.top_btn').click(function(){
