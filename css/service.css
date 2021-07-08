@@ -24,5 +24,27 @@
 .benefit_box .content_text {height: 450px; position: relative;}
 
 .benefit_box .content_text span {font-size: 24px; font-weight: bold; display: block; text-align: center; margin-bottom: 32px;}
-.benefit_img {width: 960px; height: 630px; text-align: center;}
-.benefit_img img {width: 840px; height: 630px;}
+.benefit_img {
+    width: 960px; 
+    height: 630px; 
+    margin:0 auto;
+    background:url(../img/benefit-2.png) no-repeat center center;
+    position: relative;
+}
+.benefit_img div{position:absolute;}
+.benefit_img div:nth-child(1){
+    top:46px;
+    left:131px;
+}
+.benefit_img div:nth-child(2){
+    top:46px;
+    left:553px;
+}
+.benefit_img div:nth-child(3){
+    top:368px;
+    left:134px;
+}
+.benefit_img div:nth-child(4){
+    top:368px;
+    left:525px;
+}

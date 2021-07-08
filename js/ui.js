@@ -37,10 +37,8 @@ $(document).ready(function(){
     /* m hambuger */
     $('.tab_menu li').click(function(){
         var tab_id = $(this).attr('data-id');
-
         $('.tab_menu li').removeClass('on');
         $('.tab_content').removeClass('current');
-     
         $(this).addClass('on');
         $("#"+tab_id).addClass('current');
     })
@@ -66,7 +64,6 @@ $(document).ready(function(){
     $(".faq dt").mouseleave(function(){
         $("h3").css('color','black');
         $(".faq dt").css('background-color','white');
-
     });
     /* faq */
 });

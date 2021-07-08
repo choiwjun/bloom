@@ -140,6 +140,9 @@
     left:1314px;
     top:1453px;
 }
+.leaf div{position:absolute;}
+.leaf div:nth-child(1){top:503px;left:205px;}
+.leaf div:nth-child(2){top:354px;left:300px;}
 /*
 .story_img img {display: block; width: 1920px; height: 1701px;}
 */
