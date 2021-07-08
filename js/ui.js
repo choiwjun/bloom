@@ -19,7 +19,10 @@ var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windo
 }
 
 user 접속여부 확인 */
-
+$(window).scroll(function () {
+    var height = $(document).scrollTop();
+    console.log(height)
+}); 
 $(document).ready(function(){
     $('.top_btn').click(function(){
         $("html, body").animate({ scrollTop: 0 }, "slow");
