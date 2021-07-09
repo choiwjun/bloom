@@ -18,11 +18,11 @@ var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windo
     }
 }
 
-user 접속여부 확인 */
+user 접속여부 확인 
 $(window).scroll(function () {
     var height = $(document).scrollTop();
     console.log(height)
-}); 
+}); */
 $(document).ready(function(){
     $('.top_btn').click(function(){
         $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -32,7 +32,12 @@ $(document).ready(function(){
     $(".all").click(function() {
         $(this).toggleClass("on");
         $(".header_menu div").toggleClass("on");
-        $('html').css('overflow-y','hidden')
+        if($('.header_menu a').hasClass('all')){
+            $('html').css('overflow-y','scroll');
+        }
+        else if($('.header_menu a').hasClass('all on')){
+            $('html').css('overflow-y','hidden');
+        }
     });
     /* m hambuger */
     $('.tab_menu li').click(function(){
