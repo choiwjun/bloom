@@ -67,7 +67,7 @@
                     </div>
 
                     <ul class="about_list">
-                        <li>
+                        <li data-bottom="top:100px;opacity:0" data-center="top:0px;opacity:1" style="position: relative;">
                             <img class="list_img" src="../img/about_1.png">
                             <span>As one wants</span>
                             <img class="line" src="../img/line.png">
@@ -77,7 +77,7 @@
                                 서비스를 준비합니다.<br>
                             </p>
                         </li>
-                        <li>
+                        <li data-bottom="top:100px;opacity:0" data-center="top:0px;opacity:1" style="position: relative;">
                             <img class="list_img" src="../img/about_2.png">
                             <span>Direct Design</span>
                             <img class="line" src="../img/line.png">
@@ -88,7 +88,7 @@
                                 만들어 낼 수 있습니다.<br>
                             </p>
                         </li>
-                        <li>
+                        <li data-bottom="top:100px;opacity:0" data-center-top="top:0px;opacity:1" style="position: relative;">
                             <img class="list_img" src="../img/about_3.png">
                             <span>My own world</span>
                             <img class="line" src="../img/line.png">
@@ -98,7 +98,7 @@
                                 세상을 만들겠습니다.<br>
                             </p>
                         </li>
-                        <li>
+                        <li data-bottom="top:100px;opacity:0" data-center-top="top:0px;opacity:1" style="position: relative;">
                             <img class="list_img" src="../img/about_4.png">
                             <span>We are</span>
                             <img class="line" src="../img/line.png">
@@ -112,7 +112,7 @@
                 </div> <!-- e: about -->
 
                 <div class="made">
-                    <div class="title_box">
+                    <div class="title_box" data-bottom="left:-100px;opacity:0" data-center-top="left:10%;opacity:1">
                         <p class="sub">a once in a lifetime</p>
                         <h2 class="title">Made with Bloom</h2>
                         <img src="../img/leaf.png">
@@ -123,7 +123,7 @@
                             지원하고 함께하는 플랫폼 입니다.
                         </div>
                     </div>
-                    <div class="made_img">
+                    <div class="made_img" data-bottom="right:-300px;opacity:0" data-center-top="right:10%;opacity:1">
                         <img src="../img/made.jpg">
                     </div>
                 </div>
@@ -148,16 +148,16 @@
                     <a href="#"><p>VIEW APPLICATION</p></a>
                 </div>
             </div>  e: service -->
-            <div class="story">
+            <div class="story" data-bottom-top="top:300px;opacity:0" data-top="top:0;opacity:1" style="position: relative;">
                 <div class="title_box">
                     <p class="sub">Circle of Life</p>
                     <h2 class="title">인생을 살아가는 평범한 우리 이야기</h2>
                 </div>
                 <div class="story_img">
-                    <img src="../img/story.png">
+                    <img src="../img/story_m.png">
                 </div>
             </div> <!-- e: story -->
-            <div class="bloom">
+            <div class="bloom" data-bottom-top="top:300px;opacity:0" data-top="top:0;opacity:1" style="position: relative;">
                 <div class="title_box">
                     <p class="sub">소중한 사람들과 행복한 시간</p>
                     <h2 class="title">'부름'에서 연결해 드립니다</h2>
@@ -165,7 +165,7 @@
                 </div>
 
                 <ul class="bloom_list">
-                    <li>
+                    <li data-bottom="top:100px;opacity:0" data-center-top="top:0px;opacity:1">
                         <a href="#">
                             <img src="../img/wedding.jpg">
                             <div class="bloom_text">
@@ -173,7 +173,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li data-bottom="top:100px;opacity:0" data-center-top="top:0px;opacity:1">
                         <a href="#">
                             <img src="../img/party.jpg">
                             <div class="bloom_text">
@@ -181,7 +181,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li data-bottom="top:100px;opacity:0" data-center-top="top:0px;opacity:1">
                         <a href="#">
                             <img src="../img/meeting.jpg">
                             <div class="bloom_text">
@@ -189,7 +189,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li data-bottom="top:100px;opacity:0" data-center-top="top:0px;opacity:1">
                         <a href="#">
                             <img src="../img/restaurant.jpg">
                             <div class="bloom_text">
@@ -197,7 +197,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li data-bottom-top="top:100px;opacity:0" data-bottom="top:0px;opacity:1">
                         <a href="#">
                             <img src="../img/event.jpg">
                             <div class="bloom_text">
@@ -205,7 +205,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>    
+                    <li data-bottom-top="top:100px;opacity:0" data-bottom="top:0px;opacity:1">    
                             <p>
                                 Preparing<br>
                                 Category
@@ -251,7 +251,7 @@
                 <img class="history_bottom" src="../img/history_bottom.png">
             </div>  e: history_wrap -->
 
-            <div class="app_wrap">
+            <div class="app_wrap" data-bottom-top="top:300px;opacity:0" data-top="top:0;opacity:1" style="position: relative;">
                 <div class="app">
                     <div class="title_box">
                         <p class="sub">introduce App</p>
@@ -302,5 +302,20 @@
             <div class="rights">© 2020 <span>NAMOK</span> . All Rights Reserved</div>
         </footer> <!-- e: footer -->
     </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            console.log($(window).scrollTop());
+ 
+            skrollr.init({
+                forceHeight: false,
+                mobileCheck: function(){
+                    if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+                        // mobile device
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

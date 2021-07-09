@@ -32,13 +32,13 @@ $(document).ready(function(){
     $(".all").click(function() {
         $(this).toggleClass("on");
         $(".header_menu div").toggleClass("on");
-        if($('.header_menu a').hasClass('all')){
-            $('html').css('overflow-y','scroll');
-        }
-        else if($('.header_menu a').hasClass('all on')){
+        if($('.header_menu a').hasClass('all on')){
             $('html').css('overflow-y','hidden');
         }
-    });
+        else{
+            $('html').css('overflow-y','auto');
+        }
+    });   
     /* m hambuger */
     $('.tab_menu li').click(function(){
         var tab_id = $(this).attr('data-id');

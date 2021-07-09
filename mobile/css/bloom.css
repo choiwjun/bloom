@@ -74,3 +74,28 @@ dt h3{float:left;font-size:12px;margin-right:20px;font-weight:400;margin-top:5px
 dt p{clear:both;display:block;}
 dd{color:#666;padding:20px;font-size:14px;line-height:34px;border-top:1px solid #ccc;display:none;}
 dd span{color:red;margin-top:10px;display:block;}
+
+.benefit_img_wrap {
+    width: 85%; 
+    height: 630px; 
+    margin:50px auto;
+    background:url(../../img/benefit-2.png) no-repeat center center;
+    position: relative;
+}
+.benefit_img_wrap div{position:absolute;}
+.benefit_img_wrap div:nth-child(1){
+    top:46px;
+    left:0px;
+}
+.benefit_img_wrap div:nth-child(2){
+    top:46px;
+    right:0px;
+}
+.benefit_img_wrap div:nth-child(3){
+    top:368px;
+    left:0px;
+}
+.benefit_img_wrap div:nth-child(4){
+    top:368px;
+    right:0px;
+}

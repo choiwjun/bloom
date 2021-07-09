@@ -80,11 +80,22 @@
                 <p class="content_text brand_img">
                     <img src="../img/brand-3.png">
                     <span>
-                        가능 Enable<br>
-                        장소 Venue<br>
-                        확장 Expand<br>
-                        방향 제시 Navigate<br>
-                        함께 Together<br><br>
+                        <span data-bottom-top="top:300px;opacity:0" data-center="top:0;opacity:1" style="position: relative;">
+                            가능 Enable
+                        </span><br>
+                        <span data-100-bottom-top="top:500px;opacity:0" data-center="top:0;opacity:1" style="position: relative;">
+                            장소 Venue
+                        </span><br>
+                        <span data-100-bottom-top="top:700px;opacity:0" data-center="top:0;opacity:1" style="position: relative;">
+                            확장 Expand
+                        </span><br>
+                        <span data-100-bottom-top="top:800px;opacity:0" data-center="top:0;opacity:1" style="position: relative;">
+                            방향 제시 Navigate
+                        </span><br>
+                        <span data-100-bottom-top="top:1000px;opacity:0" data-center="top:0;opacity:1" style="position: relative;">
+                            함께 Together
+                        </span>
+                        <br><br>
 
                         나의 삶이 <strong>EVENT</strong>가 되다
                     </span>
@@ -92,31 +103,33 @@
             </div>
             <div class="randing_text">
                 <div class="content">
-                    <h2 class="content_title">심볼 마크</h2>
-                    <p class="content_text">
-                        부름의 심볼 마크의 다양한 원형은 꽃이 피어남과 동시에 축제의 의미를 가진 폭죽이 터져나가는 모습을<br />
-                        연상하게 해주며, 사람들이 가진 다양하고 밝은 에너지를 컬러를 통해 표현하였습니다.<br />
-                        그 속에 있는 브랜드는 그들을 조화롭게 잘 연결해주는 플랫폼으로써의 아이덴티티에 충실함을 느끼게
-                        해줍니다
-                    </p>
-                    <div class="bi_img brand_img">
-                        <img src="../img/BI-logo.jpg" alt="" />
+                    <div data-bottom-top="top:300px;opacity:0" data-bottom="top:0;opacity:1" style="position: relative;">
+                        <h2 class="content_title">심볼 마크</h2>
+                        <p class="content_text">
+                            부름의 심볼 마크의 다양한 원형은 꽃이 피어남과 동시에 축제의 의미를 가진 폭죽이 터져나가는 모습을<br />
+                            연상하게 해주며, 사람들이 가진 다양하고 밝은 에너지를 컬러를 통해 표현하였습니다.<br />
+                            그 속에 있는 브랜드는 그들을 조화롭게 잘 연결해주는 플랫폼으로써의 아이덴티티에 충실함을 느끼게
+                            해줍니다
+                        </p>
+                        <div class="bi_img brand_img">
+                            <img src="../img/BI-logo.jpg" alt="" />
+                        </div>
                     </div>
                     <div class="bi_list brand_img">
                         <ul>
-                            <li>
+                            <li data-bottom-top="top:300px;opacity:0" data-bottom="top:0;opacity:1" style="position: relative;">
                                 <h2 class="content_title">시그니쳐 (가로형)</h2>
                                 <img src="../img/BI-1.jpg" alt="" />
                             </li>
-                            <li>
+                            <li data-bottom-top="top:300px;opacity:0" data-bottom="top:0;opacity:1" style="position: relative;">
                                 <h2 class="content_title">시그니쳐 (세로형)</h2>
                                 <img src="../img/BI-2.jpg" alt="" />
                             </li>
-                            <li>
+                            <li data-bottom-top="top:300px;opacity:0" data-bottom="top:0;opacity:1" style="position: relative;">
                                 <h2 class="content_title">로고</h2>
                                 <img src="../img/BI-3.jpg" alt="" />
                             </li>
-                            <li>
+                            <li data-bottom-top="top:300px;opacity:0" data-bottom="top:0;opacity:1" style="position: relative;">
                                 <h2 class="content_title">심볼</h2>
                                 <img src="../img/BI-4.jpg" alt="" />
                             </li>
@@ -144,5 +157,20 @@
             </div>
             <div class="rights">© 2020 <span>NAMOK</span> . All Rights Reserved</div>
         </footer> <!-- e: footer -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                console.log($(window).scrollTop());
+     
+                skrollr.init({
+                    forceHeight: false,
+                    mobileCheck: function(){
+                        if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+                            // mobile device
+                        }
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

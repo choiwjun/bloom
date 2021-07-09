@@ -49,7 +49,9 @@
 
                 <p class="content_text">
                     <div class="service_img">
-                        <img src="../img/service-phone.png">
+                        <span>
+                            <img src="../img/service-phone.png">
+                        </span>
                         <ul>
                             <li>
                                 <span>국내 최초, 최대 이벤트 정보 플랫폼</span><br>
@@ -69,11 +71,27 @@
             </div>
             <div class="randing_text">
                 <h2>제휴사 혜택</h2>
-
                 <p class="content_text">
                     <div class="benefit_img">
                         <span>'부름'에 등록하면 좋은 점은?</span>
-                        <img src="../img/benefit-2m.png">
+                        <div class="benefit_img_wrap">
+                            <div
+                            >
+                                <img src="../img/benefit01.png" />
+                            </div>
+                            <div
+                            >
+                                <img src="../img/benefit02.png" />
+                            </div>
+                            <div
+                            >
+                                <img src="../img/benefit03.png" />
+                            </div>
+                            <div
+                            >
+                                <img src="../img/benefit04.png" />
+                            </div>
+                        </div>
                     </div>
                 </p>
             </div>
@@ -97,5 +115,20 @@
             </div>
             <div class="rights">© 2020 <span>NAMOK</span> . All Rights Reserved</div>
         </footer> <!-- e: footer -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                console.log($(window).scrollTop());
+     
+                skrollr.init({
+                    forceHeight: false,
+                    mobileCheck: function(){
+                        if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+                            // mobile device
+                        }
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
