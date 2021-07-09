@@ -21,6 +21,18 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/ui.js"></script> 
 </head>
+<script>
+    var filter = "win16|win32|win64|mac|macintel"; 
+if ( navigator.platform ) { 
+    if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { 
+        //mobile 
+        window.location.replace = "mobile/index.html";
+    } else { 
+        //pc 
+        
+    } 
+}
+</script>
 <body>
     <div id="wrap">
         <header id="header" class="box_width">
