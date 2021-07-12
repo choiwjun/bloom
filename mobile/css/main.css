@@ -120,4 +120,4 @@
 .story_img img {display: block; width: 100%; height: auto;}
 
 
-.slick-initialized .slick-slide{position:relative !important}
+.slick-slide{position:relative}
