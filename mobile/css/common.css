@@ -1,7 +1,7 @@
 /* reset */
 *, *:after, *:before {box-sizing: border-box;}
 body, div, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, table, tr, th, td, form, fieldset, legend, input, label, textarea, select, button {margin: 0; padding: 0;}
-body, h1, h2, h3, h4, h5, h6 {font-size: 16px; font-family: 'S-Core', sans-serif; color: #222;}
+body, h1, h2, h3, h4, h5, h6 {font-family: 'S-Core', sans-serif; color: #222; font-size:16px}
 a {text-decoration: none; color: #222; -webkit-tap-highlight-color: rgba(0,0,0,.1);}
 ul, ol, li {list-style: none;}
 img, fieldset {border: none; vertical-align: middle;}
@@ -51,13 +51,13 @@ body {overflow-x: hidden; width: 100%; height: 100%;}
 /* footer */
 #footer {position: relative; height: 410px;}
 .footer_box {position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 100%; height: 362px; background: #edf9f4; background: url(../../img/footer_bg.jpg) no-repeat 50% 0; background-size: cover;}
-.contact {float: left; width: 55%; font-size: 20px; font-weight: bold; padding-top: 72px; margin-left: 10%;}
+.contact {float: left; width: 60%; font-size: 1.8rem; font-weight: bold; padding-top: 72px; margin-left: 10%;}
 .line_img {display: block; width: 34px; height: 2px; margin: 14px 0;}
-.contact ul li {font-size: 14px; font-weight: normal; line-height: 28px;}
+.contact ul li {font-size: 1.3rem; font-weight: normal; line-height: 2.6rem;}
 .contact ul li span {/*width: 100px;*/ font-weight: bold; display: inline-block;}
 
-.footer_logo {width: 23%; height: auto; position: absolute; right: 10%; top: 50%; transform: translateY(-50%);}
+.footer_logo {width: 20%; height: auto; position: absolute; right: 10%; top: 50%; transform: translateY(-50%);}
 .footer_logo img {width: 100%;}
 
-#footer .rights {position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 100%; height: 48px; background: #f7eee2; text-align: center; line-height: 46px;}
+#footer .rights {position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 100%; height: 62px; font-size:1.6rem;background: #f7eee2; text-align: center; line-height: 62px;}
 #footer .rights span {font-weight: bold;}

@@ -1,14 +1,5 @@
 
-var filter = "win16|win32|win64|mac|macintel"; 
-if ( navigator.platform ) { 
-    if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { 
-        //mobile 
-        window.location.replace = "mobile/index.html";
-    } else { 
-        //pc 
-        
-    } 
-}
+
  /*
 var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'Windows CE;', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Mobile', 'Symbian', 'Opera Mobi', 'Opera Mini', 'IEmobile');
     for (var word in mobileKeyWords) {
