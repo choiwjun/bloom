@@ -118,3 +118,6 @@
 
 .story_img {display:block; width: 100%; height: auto; padding-top: 64px; padding-bottom: 96px; margin: 0 auto;}
 .story_img img {display: block; width: 100%; height: auto;}
+
+
+.slick-initialized .slick-slide{position:relative !important}

@@ -20,6 +20,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
         <![endif]-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="../js/ui.js"></script> 
     </head>
 <body>
@@ -41,15 +43,39 @@
 
         <div id="visual">
             <div class="slider">
-                <div class="img_box">
-                    <img src="../img/m_banner_2.jpg">
-                    <div class="slider_text">
-                        <P>Design your life</P>
-                        <span>행복을 연결하는 부름</span>
-                        <ul class="slider_down">
-                            <li><a href="#"><img src="../img/and_down.png" alt="안드로이드 버전 다운로드"></a></li>
-                            <li><a href="#"><img src="../img/apple_down.png" alt="아이폰 버전 다운로드"></a></li>
-                        </ul>
+                <div class="img_wrap">
+                    <div class="img_box">
+                        <img src="../img/m_banner_2.jpg">
+                        <div class="slider_text">
+                            <P>Design your life</P>
+                            <span>행복을 연결하는 부름</span>
+                            <ul class="slider_down">
+                                <li><a href="#"><img src="../img/and_down.png" alt="안드로이드 버전 다운로드"></a></li>
+                                <li><a href="#"><img src="../img/apple_down.png" alt="아이폰 버전 다운로드"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="img_box">
+                        <img src="../img/m_banner_2.jpg">
+                        <div class="slider_text">
+                            <P>Design your life</P>
+                            <span>행복을 연결하는 부름</span>
+                            <ul class="slider_down">
+                                <li><a href="#"><img src="../img/and_down.png" alt="안드로이드 버전 다운로드"></a></li>
+                                <li><a href="#"><img src="../img/apple_down.png" alt="아이폰 버전 다운로드"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="img_box">
+                        <img src="../img/m_banner_2.jpg">
+                        <div class="slider_text">
+                            <P>Design your life</P>
+                            <span>행복을 연결하는 부름</span>
+                            <ul class="slider_down">
+                                <li><a href="#"><img src="../img/and_down.png" alt="안드로이드 버전 다운로드"></a></li>
+                                <li><a href="#"><img src="../img/apple_down.png" alt="아이폰 버전 다운로드"></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div> <!-- e: slider -->
@@ -112,7 +138,7 @@
                 </div> <!-- e: about -->
 
                 <div class="made">
-                    <div class="title_box" data-bottom="left:-100px;opacity:0" data-center-top="left:10%;opacity:1">
+                    <div class="title_box" data-bottom="left:-300px;opacity:0" data-center-top="left:10%;opacity:1">
                         <p class="sub">a once in a lifetime</p>
                         <h2 class="title">Made with Bloom</h2>
                         <img src="../img/leaf.png">
@@ -305,6 +331,14 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
     <script>
         $(document).ready(function(){
+            $('.img_wrap').slick({
+                arrows: false,
+                autoplay: true,
+                dots: false,
+                prevArrow:false,
+                nextArrow:false,
+                autoplaySpeed: 2000,
+            });
             console.log($(window).scrollTop());
  
             skrollr.init({
