@@ -2,8 +2,9 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>모두의 행사 :: BLOOM</title>
+    <title>예약 전문 플랫폼 :: BLOOM</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -22,15 +23,22 @@
     <script src="js/ui.js"></script> 
 </head>
 <script>
-    var filter = "win16|win32|win64|mac|macintel"; 
-if ( navigator.platform ) { 
-    if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { 
-        //mobile 
-        window.location.replace = "https://choiwjun.github.io/bloom/mobile/index.html";
-    } else { 
-        //pc 
-        
-    } 
+    function isMobile() {
+	if (navigator.platform) {
+		var filter = "win16|win32|win64|mac|macintel";
+		if (filter.indexOf( navigator.platform.toLowerCase() ) < 0) {
+            window.location.href = "http://namok.co.kr/mobile/index.html";
+			return true;
+		} else {
+			if (navigator.userAgent.match(".*(iPhone|iPod|iPad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson).*")) {
+                window.location.href = "http://namok.co.kr/mobile/index.html";
+				return true;
+			} else {
+				// pc 접속인 경우
+				return false;
+			}
+		}
+	}
 }
 </script>
 <body>
